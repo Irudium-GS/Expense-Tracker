@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style sheet ====================================================== -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Google Icons ====================================================== -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=cancel" />
+
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="fieldColumn">
+            <h2>Income Expanse tracker</h2>
+            <h4>Your Balance</h4>
+            <h1 class="balance">₹ 0.00</h1>
+
+            <div class="inc-exp-container">
+                <div class="inc">
+                    <h4>Income</h4>
+                    <p class="amt-plus" id="inc amt">₹ 0.00</p>
+                </div>
+                <div class="exp">
+                    <h4>Expanse</h4>
+                    <p class="amt-minus" id="exp amt">₹ 0.00</p>
+                </div>
+            </div>
+            
+            <form action="#" id="form">
+
+                <div class="form-control">
+                    <label for="category">Select a Category</label>
+                    <select name="categories" id="categories" required>
+                        <option value="" selected disabled>Choose any one</option>
+                        <option value="income">Income</option>
+                        <option value="food">Food</option>
+                        <option value="travel">Travel</option>
+                        <option value="groceries">Groceries</option>
+                        <option value="Petrol">Petrol/Diesel</option>
+                        <option value="snacks">Snacks</option>
+                        <option value="bills">EB Bill/Recharges</option>
+                        <option value="other">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                </div>
+
+                <div class="form-control">
+                    <label for="desc">Description</label>
+                    <input type="text" name="desc" id="desc" placeholder="Enter Description">
+                </div>
+
+                <div class="form-control">
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="amount" placeholder="Enter Amount">
+                </div>
+
+                
+
+                <button type="button" id="btn" class="btn">Add transaction</button>
+            </form>
+
+        </div>
+        <div class="transaction">
+            <h3>Transaction Details</h3>
+            <ul class="trans" id="trans">
+                <li class="exp">
+                    Insurance
+                    <span>-2400</span>
+                    <button class="btn-del">X</button>
+                </li>
+            </ul>
+
+            <ul class="trans" id="trans">
+                <li class="inc">
+                    Salary
+                    <span>2400</span>
+                    <button class="btn-del">X</button>
+                </li>
+            </ul>
+
+            <ul class="trans" id="trans">
+                <li class="exp">
+                    Rant
+                    <span>-2400</span>
+                    <button class="btn-del">X</button>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
