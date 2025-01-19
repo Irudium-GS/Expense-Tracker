@@ -93,15 +93,15 @@ body{
     -o-border-radius: 2px;
 } 
 #form .btn{
-    background: green;
+    background: rgb(26, 38, 52);
     padding: 10px;
-    color: #ffff;
+    color: aquamarine;
     font-size: 18px;
     font-weight: 800;
     width: 200px;
     margin: 40px 130px; 
     outline: none;
-    border: 1px solid aquamarine;
+    border: 1.5px solid aquamarine;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
