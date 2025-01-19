@@ -11,6 +11,58 @@ body{
     display: grid;
     overflow: hidden; 
 }
+.header{
+    position: sticky;
+    padding: 10px 5%;
+    background-color: #1b2735;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    display: flex;
+    cursor: pointer;
+    font-size: 18px;
+    color: aquamarine;
+    align-items: center;
+}
+.header .logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header .nav_links{
+    display: flex;
+    list-style: none;
+}
+.header .nav_links li{
+    display: inline-block;
+    margin: 0 20px;  
+}
+.header .nav_links li a{
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+    text-decoration: none;
+    color: aquamarine;
+}
+.header .nav_links li a:hover{
+    color: lawngreen;
+}
+.header .nav_btn{
+    padding: 9px 25px;
+    background-color: rgba(26, 38, 52, 1);
+    border: 2px solid aquamarine;
+    color: aquamarine;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.header .nav_btn:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
 .container{
     display: flex;
     /* box-shadow: rgba(255, 255, 255, 0.986); */
@@ -18,7 +70,7 @@ body{
 .fieldColumn{
     width: 500px;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blue(10px);
     color: #ffff;
     padding: 20px;
@@ -94,19 +146,23 @@ body{
 } 
 #form .btn{
     background: rgb(26, 38, 52);
-    padding: 10px;
+    padding: 9px 25px;
     color: aquamarine;
-    font-size: 18px;
-    font-weight: 800;
-    width: 200px;
-    margin: 40px 130px; 
+    font-size: 22px;
+    font-weight: 400;
+    width: 250px;
+    margin: 40px 105px; 
     outline: none;
     border: 1.5px solid aquamarine;
+    cursor: pointer;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+}
+#form .btn:hover{
+    background-color: rgba(0, 136, 169, 0.8);
 }
 .transaction{
     padding: 50px 20px;
