@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login/Register</title>
+
+        <link rel="stylesheet" href="./assets/css/form.css">
+    </head>
+    <body>
+    <!--    <img src="./image/orange gold.png"> -->
+        <div class="container right-panel-active">
+            <div class="container__form container--register">
+                <form action="#" class="form" id="form1">
+                    <h2 class="form__title">Register</h2>
+                    <input type="email" placeholder="Email" class="input" required>
+                    <input type="password" placeholder="Password" class="input" required>
+                    <input type="password" placeholder="Conform Password" class="input" required>
+                    <button class="btn">Register</button>
+                </form>
+            </div>
+            <div class="container__form container--login">
+                <form action="#" class="form" id="form2">
+                    <h2 class="form__title">Login</h2>
+                    <input type="email" placeholder="Email" class="input" required>
+                    <input type="password" placeholder="Password" class="input" required>
+                    <a href="#" class="link">Forgot your password?</a>
+                    <button class="btn">Login</button>
+                </form>
+            </div>
+            <div class="container__overlay">
+                <div class="overlay ocean">
+                    <div class="wave"></div>
+                    <div class="overlay__panel overlay--left">
+                        <button class="btn" id="Login">Login</button>
+                    </div>
+                    <div class="wave"></div>
+                    <div class="overlay__panel overlay--right">
+                        <button class="btn" id="Register">Register</button>
+                    </div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const signInBtn = document.getElementById("Login");  
+            const signUpBtn = document.getElementById("Register");  
+            const fistForm = document.getElementById("form1");  
+            const secondForm = document.getElementById("form2");  
+            const container = document.querySelector(".container");  
+            signInBtn.addEventListener("click", () => {  
+                container.classList.remove("right-panel-active");  
+            });  
+            signUpBtn.addEventListener("click", () => {  
+                container.classList.add("right-panel-active");  
+            });  
+            fistForm.addEventListener("submit", (e) => e.preventDefault());  
+            secondForm.addEventListener("submit", (e) => e.preventDefault()); 
+        </script>
+    
+    </body>
+</html>    
