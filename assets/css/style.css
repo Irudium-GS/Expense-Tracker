@@ -75,8 +75,8 @@ body{
 .fieldColumn{
     width: 500px;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blue(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     color: #ffff;
     padding: 20px;
     padding-top: 50px;

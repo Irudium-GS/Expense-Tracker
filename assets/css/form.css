@@ -178,7 +178,9 @@ body{
     height: 100%;  
     text-align: center;  
 }  
-
+.input-group{
+    width: 100%;
+}
 .input {  
     background-color: #fff;  
     border: none;  
@@ -187,7 +189,6 @@ body{
     width: 100%;  
     border-radius: 5px;
 }  
-
     
 @keyframes show {  
     0%,  
